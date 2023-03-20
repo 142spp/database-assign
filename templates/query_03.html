@@ -1,0 +1,24 @@
+<h2> The Result of Query_03</h2>
+<div class='query_state'>
+    SELECT p.makerName, l.price <br>
+    FROM laptop l, product p <br>
+    WHERE l.modelNumber = p.modelNumber <br>
+    GROUP BY p.makerName <br>
+    HAVING count(*) = 1 <br>
+</div>
+<br>
+<table>
+    <thead>
+        <tr>
+        <th>Maker Name</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+{% for result in query_03 %}
+    <tr>
+        <td>{{ result.makername }}</td>
+        <td>{{ result.price }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>

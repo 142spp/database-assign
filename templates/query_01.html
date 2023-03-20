@@ -1,0 +1,18 @@
+<h2> The Result of Query_01</h2>
+<div class='query_state'>
+    SELECT AVG(hdSize) from pc
+</div>
+<br>
+<table>
+    <thead>
+        <tr>
+        <th>Average HardDiskSize</th>
+    </tr>
+    </thead>
+{% for result in query_01 %}
+    <tr>
+        <td>{{ result.avg }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>

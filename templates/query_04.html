@@ -1,0 +1,25 @@
+<h2> The Result of Query_04</h2>
+<div class='query_state'>
+    SELECT makerName, p1.modelNumber, MAX(price) <br>
+    FROM printer p1, product p2 <br>
+    WHERE p1.modelNumber = p2.modelNumber <br>
+    GROUP BY p2.makerName <br>
+</div>
+<br>
+<table>
+    <thead>
+        <tr>
+        <th>Maker Name</th>
+        <th>Model Number</th>
+        <th>Maximum Price</th>
+    </tr>
+    </thead>
+{% for result in query_04 %}
+    <tr>
+        <td>{{ result.makername }}</td>
+        <td>{{ result.modelnumber }}</td>
+        <td>{{ result.maxprice }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>

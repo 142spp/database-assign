@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    margin-left: 50px;
+}
+
+table {
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    margin-left: 5px;
+}
+
+th, td {
+    border: 1px solid #444444;
+    padding: 10px;
+}
+
+hr {
+    margin-right : 50px;
+}
+
+.btn {
+    font-size:13px;
+    padding : 5px;
+    margin-bottom: 15px;
+    
+}
+
+.query_state{
+    margin:5px;
+    font-size: 21px;
+    border: thick double #444444;
+    padding: 5px;
+    line-height: 30px;
+    max-width: 600px;
+}

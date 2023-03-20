@@ -1,0 +1,22 @@
+<h2>PC Table</h2>
+<table>
+    <thead>
+        <tr>
+        <th>Model Number</th>
+        <th>Speed</th>
+        <th>Ram Size</th>
+        <th>HDD Size</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+{% for pc in pcs %}
+    <tr>
+        <td>{{ pc.modelnumber }}</td>
+        <td>{{ pc.speed }}</td>
+        <td>{{ pc.ramsize }}</td>
+        <td>{{ pc.hdsize }}</td>
+        <td>{{ pc.price }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>

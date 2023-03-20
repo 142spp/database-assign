@@ -1,0 +1,23 @@
+<h2> The Result of Query_02</h2>
+<div class='query_state'>
+    SELECT makerName,AVG(speed) <br>
+    FROM laptop l, product p  <br>
+    WHERE l.modelNumber = p.modelNumber <br>
+    GROUP BY p.makerName <br>
+</div>
+<br>
+<table>
+    <thead>
+        <tr>
+        <th>Maker Name</th>
+        <th>Average Speed</th>
+    </tr>
+    </thead>
+{% for result in query_02 %}
+    <tr>
+        <td>{{ result.makername }}</td>
+        <td>{{ result.speed }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>

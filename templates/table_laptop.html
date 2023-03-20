@@ -1,0 +1,24 @@
+<h2>Laptop Table</h2>
+<table>
+    <thead>
+        <tr>
+        <th>Model Number</th>
+        <th>Speed</th>
+        <th>Ram Size</th>
+        <th>HDD Size</th>
+        <th>Screen Size</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+{% for laptop in laptops %}
+    <tr>
+        <td>{{ laptop.modelnumber }}</td>
+        <td>{{ laptop.speed }}</td>
+        <td>{{ laptop.ramsize }}</td>
+        <td>{{ laptop.hdsize }}</td>
+        <td>{{ laptop.screen }}</td>
+        <td>{{ laptop.price }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>

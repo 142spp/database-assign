@@ -1,0 +1,21 @@
+<h2>Printer Table</h2>
+<table>
+    <thead>
+        <tr>
+        <th>Model Number</th>
+        <th>Color</th>
+        <th>Ink</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+{% for printer in printers %}
+    <tr>
+        <td>{{ printer.modelnumber }}</td>
+        <td>{{ printer.color }}</td>
+        <td>{{ printer.inktype }}</td>
+        <td>{{ printer.price }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>
+

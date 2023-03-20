@@ -1,0 +1,18 @@
+<h2>Product Table</h2>
+<table>
+    <thead>
+        <tr>
+        <th>Maker Name</th>
+        <th>Model Number</th>
+        <th>Model Type</th>
+    </tr>
+    </thead>
+{% for product in products %}
+    <tr>
+        <td>{{ product.makername }}</td>
+        <td>{{ product.modelnumber }}</td>
+        <td>{{ product.modeltype }}</td>
+    </tr>
+{% endfor %}
+</table>
+<br>
